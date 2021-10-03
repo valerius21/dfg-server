@@ -33,7 +33,7 @@ def redirect_root():
 
 @app.get('/acc')
 def accumulated_images():
-    return DB.get_accumulated_set()
+    return {'images': DB.get_accumulated_set()}
 
 
 @app.get('/rdm')
